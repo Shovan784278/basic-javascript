@@ -22,9 +22,9 @@ console.log(student);
 student.courseName = 'JavaScript';
 console.log(student);
 
-//Redeclaring a variable with const, in another scope, or in another block, is allowed:
+//Redeclaring a variable with const, in another scope or in another block, is allow to get the value: 
 
-const y = 12;
+const y = 12; 
 
 {
     const y = 13;
@@ -33,4 +33,5 @@ const y = 12;
 {
     const y = 14;
     console.log(y);
+
 }
