@@ -35,3 +35,7 @@ const y = 12;
     console.log(y);
 
 }
+
+const r = "Hello everyone!";
+console.log(typeof r);
+
