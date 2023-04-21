@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <!-- This is a JavaScript code that creates an array of numbers called "studentMarks" and uses the "find" and "findIndex" methods to find the first element in the array that is greater than 90 and return its value and index respectively.
+
+    The "find" method takes a callback function as an argument and returns the value of the first element in the array that satisfies the condition specified in the callback function. In this case, the callback function checks if the value of the element is greater than 90.
+    
+    The "findIndex" method is similar to the "find" method, but it returns the index of the first element in the array that satisfies the condition specified in the callback function.
+    
+    The code then uses the "document.write" method to display the result and resultIndex values in the HTML document. -->
+    
+
+    <script>
+
+        let studentMarks = [48,55,75,78,60,56,80,85,90,95,98];
+
+        let result = studentMarks.find(value=>value>90);
+        let resultIndex = studentMarks.findIndex(value=>value>90);
+
+        document.write(result+"<br>");
+        document.write(resultIndex);
+    </script>
+</body>
+</html>
