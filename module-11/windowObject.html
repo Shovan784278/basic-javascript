@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="objAlert()">Click Alert</button> <br><br>
+
+    <button onclick="objConfirm()">Click Confirm</button> <br><br>
+
+    <button onclick="objPrompt()">Prompt</button> <br><br>
+
+    <button onclick="objOpen()">Open</button> <br><br>
+
+    <button onclick="objClose()">Close</button> <br><br>
+
+    <button onclick="objSetTimeOut()">TimeOut</button> <br><br>
+
+
+
+    <script>
+
+        function objAlert(){
+
+            let result1 = alert("Save Success!");
+            document.write(result1);
+
+        } 
+
+        function objConfirm(){
+            
+           let result2 = confirm("Do you really want to delete this file!");
+           document.write(result2);
+        } 
+
+        function objPrompt(){
+
+            let result = prompt("Write a prompt");
+            document.write(result);
+        }
+
+        function objOpen(){
+
+            open();
+        }
+
+        function objClose(){
+
+            close();
+        }
+
+        setTimeout(function(){
+            alert("Alert After 10sec");
+        },10000)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--ID is only for single tag-->
+    
+    <!-- <h2 id="head2">Hello</h2> -->
+
+
+    <!-- Here are some example of same class tags -->
+
+    <h3 class="sameClass">Header3</h3>
+    <p class="sameClass">Paragraph</p>
+    <button class="sameClass">Button</button>
+
+    <script>
+
+        // let result = document.getElementById('head2'); //This is for id
+        // result.innerHTML = "Hello Shovan";
+
+
+    //---------------------- document.getElementsByClassName------------------
+
+    //Here we can manipulate HTML tag, same classes or any class by document.getElementsByClassName
+       const res = document.getElementsByClassName('sameClass'); 
+       res[0].innerHTML = "Header3 is perfect!";
+       res[1].innerHTML = "Paragraph will starts from here...";
+       res[2].innerHTML = "Button is nice";
+
+    </script>
+
+</body>
+</html>
